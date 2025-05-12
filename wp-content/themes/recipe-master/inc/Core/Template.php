@@ -60,6 +60,15 @@ class Template {
                 [],
                 filemtime( get_stylesheet_directory() . '/assets/css/recipe/single-recipe.css' )
             );
+
+            // Single recipe JS
+             wp_enqueue_script(
+                 'recipe-master-single',
+                 get_template_directory_uri() . '/assets/js/recipe/single-recipe.js',
+                 [],
+                 filemtime( get_stylesheet_directory() . '/assets/js/recipe/single-recipe.js' ),
+                 true
+             );
         }
 
         // Navigation script
