@@ -1,0 +1,143 @@
+/**
+ * Admin styles for Recipe Importer
+ */
+
+.recipe-importer-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.import-form {
+    margin-bottom: 20px;
+}
+
+.import-form .form-row {
+    margin-bottom: 15px;
+}
+
+.import-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.import-form .description {
+    margin-top: 5px;
+    color: #666;
+    font-style: italic;
+}
+
+.import-options {
+    margin-bottom: 20px;
+}
+
+.import-actions {
+    margin-top: 20px;
+}
+
+.import-results {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #e5e5e5;
+}
+
+.import-progress {
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    height: 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #0073aa;
+    width: 0;
+    transition: width 0.3s ease;
+}
+
+.progress-text {
+    text-align: center;
+    font-weight: 600;
+}
+
+.import-log {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #e5e5e5;
+    padding: 15px;
+    background-color: #fff;
+    font-family: monospace;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.log-entry {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed #f0f0f0;
+}
+
+.log-entry.created {
+    color: #46b450;
+}
+
+.log-entry.updated {
+    color: #00a0d2;
+}
+
+.log-entry.skipped {
+    color: #ffb900;
+}
+
+.log-entry.failed {
+    color: #dc3232;
+}
+
+.import-summary {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.summary-item {
+    text-align: center;
+    flex: 1;
+}
+
+.summary-count {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.summary-label {
+    font-size: 14px;
+    color: #666;
+}
+
+.created .summary-count {
+    color: #46b450;
+}
+
+.updated .summary-count {
+    color: #00a0d2;
+}
+
+.skipped .summary-count {
+    color: #ffb900;
+}
+
+.failed .summary-count {
+    color: #dc3232;
+}

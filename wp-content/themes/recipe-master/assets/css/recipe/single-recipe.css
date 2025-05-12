@@ -1,0 +1,166 @@
+/* Recipe Single Styles */
+:root {
+    --recipe-red: #dc3545;
+    --recipe-green: #28a745;
+    --recipe-beige: #f8f5f0;
+    --recipe-cream: #fffdd0;
+    --recipe-dark: #333333;
+    --recipe-accent: #8b5cf6;
+    --recipe-accent-hover: #7c3aed;
+    --gray-50: #f9fafb;
+    --gray-100: #f3f4f6;
+    --gray-200: #e5e7eb;
+    --gray-300: #d1d5db;
+    --gray-400: #9ca3af;
+    --gray-500: #6b7280;
+    --gray-600: #4b5563;
+    --gray-700: #374151;
+    --gray-800: #1f2937;
+    --gray-900: #111827;
+    --recipe-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+    --recipe-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --recipe-radius: 0.5rem;
+    --recipe-transition: all 0.2s ease;
+    
+    /* Borders and background colors */
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+    --card-foreground: 222.2 84% 4.9%;
+}
+
+/**
+ * Essential styles for the single recipe template
+ * Note: Most styling is now handled by Tailwind CSS classes directly in the template
+ * Only keeping the necessary custom styles here
+ */
+
+.bg-recipe-beige {
+    --tw-bg-opacity: 1;
+    background-color: rgb(245 245 220 / var(--tw-bg-opacity));
+}
+
+.text-recipe-red {
+    --tw-text-opacity: 1;
+    color: rgb(229 57 53 / var(--tw-text-opacity));
+}
+
+.text-recipe-cream {
+    --tw-text-opacity: 1;
+    color: rgb(255 253 208 / var(--tw-text-opacity));
+}
+
+
+.text-recipe-green {
+    --tw-text-opacity: 1;
+    color: rgb(124 179 66 / var(--tw-text-opacity));
+}
+
+.text-white {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.bg-recipe-red {
+    --tw-bg-opacity: 1;
+    background-color: rgb(229 57 53 / var(--tw-bg-opacity));
+}
+
+.transition-colors {
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .15s;
+}
+
+/* Star rating styles used by JS */
+.recipe-stars {
+    display: flex;
+}
+
+.star {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: #fbbf24; /* Yellow-400 */
+}
+
+.star-empty {
+    color: var(--gray-300);
+    opacity: 0.7;
+}
+
+/* Checked ingredient styles used by JS */
+.checked {
+    text-decoration: line-through;
+    color: var(--gray-500);
+}
+
+.checked svg {
+    color: var(--recipe-accent) !important;
+}
+
+/* Font class used in template */
+.font-playfair {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 0.05em;
+}
+
+/* Print styles for better printing experience */
+@media print {
+    .recipe-single {
+        padding: 0;
+        max-width: 100%;
+    }
+    
+    .recipe-meta-item,
+    .rounded-lg,
+    .border,
+    .shadow-md {
+        box-shadow: none !important;
+        border: 1px solid #eee !important;
+    }
+    
+    .recipe-featured-image-wrap {
+        height: 200px !important;
+    }
+    
+    .recipe-image-overlay {
+        display: none !important;
+    }
+    
+    .bg-gray-50 {
+        background-color: white !important;
+    }
+    
+    .rounded-lg, 
+    .rounded-md,
+    .rounded-full {
+        border-radius: 0 !important;
+    }
+    
+    .border {
+        border-color: #eee !important;
+    }
+    
+    .relative.rounded-lg.overflow-hidden.h-\[300px\] {
+        height: 200px !important;
+    }
+    
+    .absolute.bottom-0.left-0.right-0.bg-gradient-to-t {
+        display: none !important;
+    }
+}
+
+.h-\[300px\] {
+    height: 300px;
+}
+
+.gradient-overlay {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+}
+
+@media (min-width: 768px) {
+    .md\:h-\[400px\] {
+        height: 400px;
+    }
+}
+

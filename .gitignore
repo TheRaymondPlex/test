@@ -1,0 +1,44 @@
+#IDE
+.idea
+
+# WordPress core files
+index.php
+wp-admin/
+wp-includes/
+license.txt
+readme.html
+wp-activate.php
+wp-blog-header.php
+wp-comments-post.php
+wp-config-sample.php
+wp-config.php
+wp-cron.php
+wp-links-opml.php
+wp-load.php
+wp-login.php
+wp-mail.php
+wp-settings.php
+wp-signup.php
+wp-trackback.php
+xmlrpc.php
+.htaccess
+
+# Debug logs
+wp-content/debug.log
+
+# Uploaded files
+wp-content/uploads/
+wp-content/upgrade/
+/wp-content/themes/recipe-master/vendor/
+
+# Plugin specific files
+wp-content/languages/
+
+# Core Themes
+wp-content/themes/twentytwentyfive
+wp-content/themes/twentytwentyfour
+wp-content/themes/twentytwentythree
+
+#Core plugins
+wp-content/plugins/akismet
+wp-content/plugins/hello.php

@@ -1,0 +1,9 @@
+name: purple
+recipe: wordpress
+config:
+  webroot: .
+  php: "8.2"
+  wordpress: 6.8.1
+services:
+  database:
+    portforward: 3308
