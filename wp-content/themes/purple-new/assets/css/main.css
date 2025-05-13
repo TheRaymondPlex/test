@@ -1,0 +1,392 @@
+/* Fonts */
+@import url("https://db.onlinewebfonts.com/c/a247ab441979a1be2c543879c08926bc?family=Afek+1.5+AAA+Bold");
+@import url("https://db.onlinewebfonts.com/c/ed7dfea2974994f830d2fe1601790772?family=Afek+1.5+AAA+Light");
+@import url("https://db.onlinewebfonts.com/c/d5956db67db5bf80f6c88db6243b366d?family=Afek+1.5+AAA+DemiBold");
+@import url("https://db.onlinewebfonts.com/c/e5cf71c3357cc4fd2fbd5e2861dd06db?family=Afek+1.5+AAA+UltraBold");
+@import url("https://db.onlinewebfonts.com/c/371773e35cd1f39f1b5823d2a0704be3?family=Afek+1.5+AAA+UltraLight");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--white);
+    font-family: "Afek 1.5 AAA DemiBole", sans-serif;
+    font-weight: 400;
+}
+
+:root {
+    --black: #0F0F0F;
+    --white: #FFFFFF;
+    --gray: #7B7B7B;
+    --purple: #734EE1;
+    --gradiend: linear-gradient(90.05deg, var(--purple) 15.17%, #F23865 53.24%, #F7B500 100%);
+    --drop-shadow: 0px 4px 10px 0px var(--purple);
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+    background-color: var(--black);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0.2px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    padding: 50px 0;
+    z-index: 100;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.back-button {
+    all: unset;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.wrapper {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.section {
+    height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    position: relative;
+}
+
+.section-title {
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0.2px;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 18px;
+}
+
+.section-paragraph {
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0;
+    text-transform: capitalize;
+    margin-bottom: 80px;
+    color: var(--gray);
+    border-right: 1px solid var(--white);
+    padding: 0 6px;
+}
+
+.contact-paragraph {
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0;;
+}
+
+.button {
+    display: inline-block;
+    min-width: 180px;
+    min-height: 50px;
+    border-radius: 4px;
+    padding: 16px 26px;
+    box-shadow: var(--drop-shadow);
+    background: var(--purple);
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+}
+
+.phone-number-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.phone-number-content, .phone-number-content .section-title {
+    text-align: right;
+}
+
+.your-name-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.technologies-section {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
+}
+
+.years-of-experience-title {
+    margin-bottom: 8px;
+}
+
+.technologies-list, .years-of-experience-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    max-width: 755px;
+}
+
+.technology, .years-of-experience-item {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 12px;
+    align-items: center;
+    min-width: 80px;
+    border-radius: 60px;
+    border: 1px solid #3F3F3F;
+    padding: 15px 16px;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0;
+}
+
+.experts-number {
+    padding: 16px 0;
+    margin-bottom: 22px;
+}
+
+.experts-number-button {
+    width: 42px;
+    aspect-ratio: 1;
+    font-size: 24px;
+    border-radius: 50%;
+    border: 0;
+    outline: 0;
+    background: #3F3F3F;
+    cursor: pointer;
+}
+
+.experts-number-title {
+    margin-top: 22px;
+    margin-bottom: 8px;
+}
+
+.technology:has(.experts-number-button) {
+    padding: 2px;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.contact-gif {
+    max-width: 623px;
+    aspect-ratio: 623 / 478;
+    object-fit: cover;
+}
+
+.socials {
+    display: flex;
+    gap: 16px;
+}
+
+.container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    position: relative;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+.progress-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: var(--gray);
+    z-index: 100;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0;
+    background: var(--gradiend);
+    transition: width 0.3s ease;
+}
+
+.bg-image-1, .bg-image-2, .bg-image-3 {
+    position: absolute;
+    transition: opacity 0.1s ease;
+}
+
+.bg-image-1 {
+    top: 30%;
+    right: 0;
+}
+
+.bg-image-2 {
+    top: 0;
+    left: 25%;
+}
+
+.bg-image-3 {
+    bottom: 0;
+    left: 10%;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+/* Responsive design */
+@media screen and (max-width: 1024px) {
+    .wrapper {
+        padding: 0 30px;
+    }
+    
+    .technologies-list, .years-of-experience-list {
+        max-width: 600px;
+    }
+    
+    .contact-gif {
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 30px 0;
+    }
+    
+    .section-paragraph {
+        font-size: 32px;
+        margin-bottom: 50px;
+    }
+    
+    .contact-paragraph {
+        font-size: 32px;
+    }
+    
+    .technologies-list, .years-of-experience-list {
+        max-width: 450px;
+        gap: 12px;
+    }
+    
+    .phone-number-section img {
+        max-width: 280px;
+    }
+    
+    .contact-gif {
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    html, body {
+        font-size: 16px;
+    }
+
+    .bg-image-1 {
+        top: 15%;
+        right: -20%;
+    }
+    
+    .bg-image-2 {
+        top: -20%;
+        left: 10%;
+    }
+    
+    .bg-image-3 {
+        bottom: -20%;
+        left: -40%;
+    }
+    
+    .header {
+        padding: 20px 0;
+    }
+    
+    .wrapper {
+        padding: 0 20px;
+    }
+    
+    .section-paragraph {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+    
+    .contact-paragraph {
+        font-size: 24px;
+    }
+    
+    .button {
+        min-width: 150px;
+        padding: 12px 20px;
+    }
+    
+    .technologies-list, .years-of-experience-list {
+        max-width: 100%;
+        gap: 10px;
+    }
+    
+    .technology, .years-of-experience-item {
+        padding: 10px 12px;
+        min-width: 70px;
+        font-size: 12px;
+    }
+    
+    .phone-number-section {
+        flex-direction: column-reverse;
+        gap: 30px;
+        justify-content: center;
+    }
+    
+    .phone-number-content, .phone-number-content .section-title {
+        text-align: center;
+    }
+    
+    .contact-gif {
+        max-width: 300px;
+    }
+    
+    .socials {
+        gap: 12px;
+    }
+    
+    .socials img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media screen and (max-height: 700px) {
+    .section {
+        padding: 20px 0;
+    }
+    
+    .section-paragraph {
+        margin-bottom: 30px;
+    }
+} 
